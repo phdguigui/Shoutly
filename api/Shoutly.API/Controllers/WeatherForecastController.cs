@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Shoutly.Controllers
+namespace Shoutly.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
