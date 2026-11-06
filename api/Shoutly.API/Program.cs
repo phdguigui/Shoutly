@@ -8,12 +8,9 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-Console.WriteLine($"teste {app.Environment.EnvironmentName} {app.Environment.IsDevelopment()}");
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    Console.WriteLine("entrou");
     app.UseSwagger();
     app.UseSwaggerUI();
 }
